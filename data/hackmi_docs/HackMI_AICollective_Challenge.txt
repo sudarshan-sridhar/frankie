@@ -1,0 +1,118 @@
+
+--- Slide 1 (ppt/slides/slide1.xml) ---
+HACK MICHIGAN 2026  ·  MAY 15–17  ·  TECHTOWN DETROIT
+AI CHALLENGE
+THE AI COLLECTIVE DETROIT
+Michigan Small Business AI Adoption
+Build something a Michigan small business owner without a tech team can actually deploy in 30 days — for under $50/month.
+COMPASS DETROIT  ·  AI CHALLENGE BRIEF
+
+--- Slide 2 (ppt/slides/slide2.xml) ---
+AI CHALLENGE  ·  THE AI COLLECTIVE DETROIT
+THE PROBLEM
+Who this challenge is for — and who it isn't
+Most AI tooling assumes the user has an engineer in the building. Most Michigan small businesses don't.
+The AI Collective Detroit's challenge centers on a specific gap: AI adoption among Michigan small businesses that don't have an engineering team. That includes restaurants, salons, contractors, retail shops, service businesses, nonprofits, and the broad category of "main street" operations that make up most employers in most Michigan cities. These owners are technically literate enough to run a business — point-of-sale systems, accounting software, social media, scheduling tools — but they aren't going to write code, hire an ML engineer, or wire together a multi-tool pipeline from scratch.
+Most AI products in the market right now are built for companies that already have technical staff. The pricing assumes per-seat enterprise budgets. The setup assumes someone who can read API documentation. The interfaces assume comfort with abstraction. A Michigan small business owner who reads about generative AI in the news has very few realistic paths from "this seems useful" to "this is running in my business and making me money."
+This is an access equity problem as much as a product problem. The businesses that could benefit most from AI — the ones with thin margins, limited time, and no IT budget — are also the ones least likely to adopt it. The gap is widening, not closing, as the frontier moves faster than tooling for non-technical users.
+The AI Collective Detroit is aligned with TechTown, Bamboo, and a broader partner network that already works with this audience. The distribution exists. What's missing is the product — something a Michigan small business owner can actually find, understand, deploy, and run without an engineering team and without an enterprise budget.
+KEY INSIGHT
+The businesses that could benefit most from AI are also the ones least likely to adopt it. This challenge is about closing that gap.
+Hack Michigan 2026  ·  AI Challenge Brief
+THE AI COLLECTIVE DETROIT · The Problem
+
+--- Slide 3 (ppt/slides/slide3.xml) ---
+AI CHALLENGE  ·  THE AI COLLECTIVE DETROIT
+CONTEXT
+The constraint surface — what "deployable" actually means
+The AI Collective specified three hard constraints. They define the audience as much as they limit the build.
+The three constraints aren't arbitrary. Each one excludes a category of solution that wouldn't actually reach a small business owner. Together they define a much narrower — and much more useful — solution space than "AI for small businesses" in the abstract.
+CONSTRAINT 1
+No engineering staff
+The owner doesn't have a developer. Setup, integration, and maintenance must all be doable by someone whose job is running a small business, not building software.
+CONSTRAINT 2
+Under $50 per month
+Total operating cost. This rules out most enterprise AI tooling and forces creative use of off-the-shelf infrastructure, free tiers, and efficient model choices.
+CONSTRAINT 3
+Deployable in 30 days
+From the day a Michigan small business owner discovers the tool to the day it's actually working in their business. No multi-quarter implementations.
+Hack Michigan 2026  ·  AI Challenge Brief
+THE AI COLLECTIVE DETROIT · Context
+
+--- Slide 4 (ppt/slides/slide4.xml) ---
+AI CHALLENGE  ·  THE AI COLLECTIVE DETROIT
+WHAT GOOD LOOKS LIKE
+What "working" looks like for a Michigan small business owner
+These are outcomes, not specifications. The AI Collective isn't prescribing what to build — they're describing what success feels like.
+OUTCOMES TO AIM FOR
+1
+It solves a problem the owner can name
+Not "AI for your business" in the abstract. A specific, repeated pain — booking, customer messages, inventory, paperwork — that the owner already knows is costing them time or money.
+2
+The owner can set it up themselves
+No installation calls, no developer onboarding, no SQL. A path from sign-up to working state that a non-technical owner can complete on their own.
+3
+It runs without ongoing attention
+Once set up, it works in the background. The owner shouldn't need to think about prompts, models, integrations, or troubleshooting on a daily basis.
+4
+It pays for itself
+At under $50/month, the tool needs to clearly save the owner more than that — in time, in lost customers recovered, in mistakes avoided. The math has to be obvious.
+5
+It's discoverable through trusted channels
+Something TechTown, Bamboo, or a similar partner could plausibly recommend to the owners they already serve.
+THE TEST
+If a Michigan small business owner finds your tool tomorrow, can they have it running — and earning back its cost — within a month?
+That's the bar. Not 'is the AI impressive?' Not 'does the demo look good?' Can a real person, with no tech team, actually use it.
+Hack Michigan 2026  ·  AI Challenge Brief
+THE AI COLLECTIVE DETROIT · What Good Looks Like
+
+--- Slide 5 (ppt/slides/slide5.xml) ---
+AI CHALLENGE  ·  THE AI COLLECTIVE DETROIT
+CONTEXT
+The audience — who Michigan small business owners actually are
+Building well for this audience requires understanding who they are, what they already use, and what they're already short on.
+The AI Collective's partner network — TechTown, Bamboo, and similar organizations — works with Michigan small businesses every day. A few patterns are worth holding in mind while designing for this audience:
+WHAT THEY RUN
+Real operations
+Restaurants, salons, retail, contractors, professional services, nonprofits. Often single-location. Often family-owned. Revenue from $50K to a few million.
+WHAT THEY USE
+Off-the-shelf software
+Square, Toast, Shopify, QuickBooks, Mailchimp, Instagram, Google Business Profile. They're comfortable with consumer SaaS, less so with developer-grade tools.
+WHAT THEY LACK
+Time, not ambition
+Most owners are working in the business, not on it. They want growth, but they don't have hours for a tool that needs ongoing configuration.
+Hack Michigan 2026  ·  AI Challenge Brief
+THE AI COLLECTIVE DETROIT · Context
+
+--- Slide 6 (ppt/slides/slide6.xml) ---
+AI CHALLENGE  ·  THE AI COLLECTIVE DETROIT
+EVALUATION & CONSTRAINTS
+How The AI Collective will evaluate solutions
+The criteria reflect the spirit of the challenge: real access, real deployability, real economic fit.
+EVALUATION CRITERIA
+ACCESS EQUITY
+Genuinely usable by Michigan small business owners without engineering staff.
+DEPLOYABILITY
+A realistic 30-day path from sign-up to working in the business.
+COST FIT
+Total operating cost stays under $50/month at typical small-business scale.
+REAL PAIN
+Addresses a problem an actual MI small business owner would pay to remove.
+PARTNER FIT
+Plausible distribution through TechTown, Bamboo, and similar networks.
+SUSTAINED USE
+Designed for ongoing use, not a one-time demo. Survives daily operation.
+CONSTRAINTS
+Must work without engineering staff
+Under $50/month total operating cost
+30-day deployment window from owner sign-up
+Built for Michigan small businesses specifically
+Honest about what it can and can't do for a non-technical user
+Hack Michigan 2026  ·  AI Challenge Brief
+THE AI COLLECTIVE DETROIT · Evaluation & Constraints
+
+--- Slide 7 (ppt/slides/slide7.xml) ---
+THE KEY QUESTION
+Can you build something a Michigan small business owner — with no tech team and a $50/month budget — actually deploys and uses for the next year?
+If yes, you've moved AI access equity forward where it matters most. The product is yours to invent.
+HACK MICHIGAN 2026  ·  THE AI COLLECTIVE DETROIT

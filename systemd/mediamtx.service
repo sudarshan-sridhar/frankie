@@ -1,0 +1,15 @@
+[Unit]
+Description=MediaMTX RTSP server for Frankie camera
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=rpclaw
+WorkingDirectory=/home/rpclaw/mediamtx
+ExecStart=/home/rpclaw/mediamtx/mediamtx /home/rpclaw/mediamtx/mediamtx.yml
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,165 @@
+
+--- Slide 1 (ppt/slides/slide1.xml) ---
+HACK MICHIGAN 2026  ·  MAY 15–17  ·  TECHTOWN DETROIT
+AI Challenge Tracks
+Three sponsor-driven problems for 48 hours of building.
+01
+DTE ENERGY
+Utility Pole Risk Profiling
+02
+STARTMIDWEST
+Innovation Ecosystem Discovery
+03
+AI COLLECTIVE DETROIT
+Small Business AI Adoption
+
+--- Slide 2 (ppt/slides/slide2.xml) ---
+CHALLENGE 01  ·  DTE ENERGY
+01 / 03
+Utility Pole Risk Profiling
+Moving from reactive pole maintenance to a predictive, risk-based approach.
+THE PROBLEM
+Utility poles hold up the entire electric and communications grid, yet traditional inspection cycles miss early warning signs and can't prioritize the highest-risk areas. With public datasets — weather history, satellite imagery, vegetation indices, flood maps — and modern ML and GIS tools, there's an opportunity to score risk proactively instead of reactively.
+WHAT TEAMS WILL BUILD
+Aggregate weather, imagery, vegetation, soil & geo datasets
+Model pole and circuit context with proxy assumptions where data is thin
+Generate explainable risk scores by pole or circuit segment
+Visualize on a map-based dashboard with filtering and prioritization
+Public
+data, open tools, creative modeling — no proprietary inputs required.
+THE QUESTION
+How can accessible data and modern tools move utility maintenance from reactive to predictive — improving reliability and optimizing limited resources?
+Hack Michigan 2026  ·  AI Challenge Tracks
+DTE ENERGY · Overview
+
+--- Slide 3 (ppt/slides/slide3.xml) ---
+CHALLENGE 01  ·  DTE ENERGY
+01 / 03
+Utility Pole Risk Profiling
+How teams will be evaluated and where to push further
+EVALUATION CRITERIA
+IMPACT
+Does the solution meaningfully improve prioritization of maintenance and capital investment?
+INNOVATION
+Creative use of public data, novel modeling, or emerging tools like computer vision.
+ACCURACY
+Soundness of risk factors, scoring logic, and underlying assumptions.
+USABILITY
+Clear, actionable outputs that operational and field teams can actually use.
+SCALABILITY
+Can the approach expand across the full service territory without rework?
+EXPLAINABILITY
+Decisions are interpretable — no black-box scoring without justification.
+CONSTRAINTS
+Public or synthetic data only
+Design for incomplete datasets
+Prioritize explainability over black-box accuracy
+Practical application over theoretical perfection
+STRETCH GOALS
+Computer vision to detect vegetation proximity from imagery
+Predictive modeling for vegetation growth or storm impact
+Integration with inspection planning workflows
+Mobile-friendly outputs for field crews
+Hack Michigan 2026  ·  AI Challenge Tracks
+DTE ENERGY · Evaluation & Stretch
+
+--- Slide 4 (ppt/slides/slide4.xml) ---
+CHALLENGE 02  ·  STARTMIDWEST
+02 / 03
+Innovation Ecosystem Discovery
+Closing the visibility gap that drives Midwest founders to the coasts.
+THE PROBLEM
+Founders struggle to find grants, incentives, accelerators, and events because the data is fragmented across city and state portals — and decays the moment it's published. StartMidwest wants a dual-sided AI platform: a conversational discovery tool for founders, and an operator layer that detects changes, ingests new sources, and routes them through human-in-the-loop verification.
+WHAT TEAMS WILL BUILD
+Conversational discovery interface with actionable next steps
+Change detection that diffs sources and surfaces meaningful updates
+Review queue for human curators to approve, edit, or reject AI proposals
+State-agnostic architecture — Michigan first, replicable to other states
+~100
+Michigan resources in the baseline dataset — over a year old, partly stale, and needing a system that keeps itself fresh.
+THE QUESTION
+When a real founder uses your tool, do they get to the moment where they say 'wait, that exists — how have I never heard of this?'
+Hack Michigan 2026  ·  AI Challenge Tracks
+STARTMIDWEST · Overview
+
+--- Slide 5 (ppt/slides/slide5.xml) ---
+CHALLENGE 02  ·  STARTMIDWEST
+02 / 03
+Innovation Ecosystem Discovery
+How teams will be evaluated and where to push further
+EVALUATION CRITERIA
+COVERAGE
+Resources found that aren't on the first page of Google for obvious queries.
+RELEVANCE
+Real fit to the founder asking — not keyword-matched approximations.
+EXPLANATION
+Founder understands what it is and the next step, no bureaucratic copy.
+FRESHNESS
+System knows what's still active, what changed, and when it was verified.
+OPERATOR UX
+Curator dashboard makes review fast and provenance is always visible.
+ARCHITECTURE
+Same pipeline plausibly works for any Midwest state with config, not code.
+CONSTRAINTS
+In scope: grants, incentives, accelerators, events, filings, mentorship
+Out of scope: startups, VCs, paid services, generic national resources
+Every record carries provenance and a last-verified timestamp
+Humans approve the truth — AI proposes, curators decide
+STRETCH GOALS
+Live demo of the same pipeline on a second state (IL, OH, WI)
+Founder-facing email/SMS digest of new matching resources
+Public 'what changed' feed for newly opened grants and deadlines
+Founder contribution path feeding the same review queue
+Deadline-aware sorting and geographic clustering
+Hack Michigan 2026  ·  AI Challenge Tracks
+STARTMIDWEST · Evaluation & Stretch
+
+--- Slide 6 (ppt/slides/slide6.xml) ---
+CHALLENGE 03  ·  THE AI COLLECTIVE DETROIT
+03 / 03
+Michigan Small Business AI Adoption
+AI access equity for Michigan main streets — built for owners without a tech team.
+THE PROBLEM
+Most AI tooling is built for companies that already have engineers. Michigan small business owners — restaurants, salons, contractors, neighborhood shops — don't have that team. Aligned with TechTown, Bamboo, and the existing partner network, this challenge is about hitting the access equity piece directly: build something a Michigan small business owner without a tech team can actually deploy.
+WHAT TEAMS WILL BUILD
+Solves a real, repeated pain point for a specific small business type
+Deployable in 30 days with no engineering staff on payroll
+Total operating cost under $50/month using off-the-shelf tooling
+Owner-friendly onboarding — usable on day one, not after training
+<$50
+per month, zero engineering staff, deployable in 30 days — the entire constraint surface.
+THE QUESTION
+If a Michigan small business owner with no tech team finds your tool tomorrow, can they have it running — and earning back its cost — within a month?
+Hack Michigan 2026  ·  AI Challenge Tracks
+THE AI COLLECTIVE DETROIT · Overview
+
+--- Slide 7 (ppt/slides/slide7.xml) ---
+CHALLENGE 03  ·  THE AI COLLECTIVE DETROIT
+03 / 03
+Michigan Small Business AI Adoption
+How teams will be evaluated and where to push further
+EVALUATION CRITERIA
+ACCESS EQUITY
+Genuinely usable by owners without engineering staff or tech literacy.
+DEPLOYABILITY
+Realistic 30-day path from sign-up to working in the business.
+COST FIT
+Total run cost stays under $50/month at typical small-business scale.
+REAL PAIN
+Solves a problem an actual MI small business owner would pay to remove.
+POLISH
+Feels finished — not a demo. Errors are handled, copy is clear.
+PARTNER FIT
+Plausible distribution through TechTown, Bamboo, and similar networks.
+CONSTRAINTS
+Must work without engineering staff
+Under $50 per month total operating cost
+30-day deployment window from owner sign-up
+Built for Michigan small businesses specifically
+STRETCH GOALS
+Multi-language onboarding (Spanish, Arabic for Detroit metro)
+Templated setup flows for the top 3 small business types
+Light analytics that show the owner the dollar value created
+Distribution-ready: partner-org co-branding hooks built in
+Hack Michigan 2026  ·  AI Challenge Tracks
+THE AI COLLECTIVE DETROIT · Evaluation & Stretch

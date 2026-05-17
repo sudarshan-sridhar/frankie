@@ -1,0 +1,195 @@
+
+--- Slide 1 (ppt/slides/slide1.xml) ---
+HACK MICHIGAN 2026  ·  MAY 15–17  ·  TECHTOWN DETROIT
+AI CHALLENGE
+STARTMIDWEST
+Building Michigan's Innovation Ecosystem
+Making the scattered resources Midwest founders need instantly discoverable — and keeping that picture true over time.
+COMPASS DETROIT  ·  AI CHALLENGE BRIEF
+
+--- Slide 2 (ppt/slides/slide10.xml) ---
+THE KEY QUESTION
+When a real Midwest founder uses your tool, do they get to the moment where they say 'wait — that exists? How have I never heard of this?'
+If yes, you've closed the visibility gap. The architecture is yours to design.
+HACK MICHIGAN 2026  ·  STARTMIDWEST
+
+--- Slide 3 (ppt/slides/slide2.xml) ---
+AI CHALLENGE  ·  STARTMIDWEST
+THE PROBLEM
+The visibility gap that drives founders to the coasts
+Michigan has resources for founders. Founders can't find them. That's not a marketing problem — it's a discovery problem.
+Michigan loses thousands of tech graduates and early-stage founders to the coasts every year. The reasons are complicated, but one of them is fixable: when a founder in Michigan starts looking for help — a grant to hire their first employee, an accelerator for hardware, a co-working space with wet-lab access, a tax credit for relocating — the information they need is fragmented across city portals, state agency websites, university pages, regional foundations, and event platforms. None of it is in one place. Most of it isn't on the first page of Google. A lot of it has changed since it was published.
+The result is a founder experience where the answer to "is there something that can help me?" is functionally "I don't know, and finding out will take a week of clicking." Coastal ecosystems have the same fragmentation, but they have density, network effects, and a culture of pointing newcomers at the right resource. The Midwest has the resources, but the discovery layer is missing.
+StartMidwest wants to fix the discovery layer. The challenge is to build something that, when a real founder uses it, gets them to a moment where they say "wait — that exists? How have I never heard of this?" That moment is the product. Everything else is implementation detail.
+There's a second, harder layer underneath. The moment any resource directory is published, it starts decaying. Programs close. Deadlines pass. URLs break. New accelerators launch. Eligibility criteria shift. A directory that's six months old is half-wrong. A year old is mostly noise. The StartMidwest baseline you'll be working from is over a year old — and part of the challenge is figuring out how a system like this stays honest over time.
+KEY INSIGHT
+When a real founder uses your tool, do they get to a moment where they say 'wait — that exists? How have I never heard of this?'
+Hack Michigan 2026  ·  AI Challenge Brief
+STARTMIDWEST · The Problem
+
+--- Slide 4 (ppt/slides/slide3.xml) ---
+AI CHALLENGE  ·  STARTMIDWEST
+CONTEXT
+What counts as "solved" — the three things that have to work together
+Returning a result isn't the bar. Getting to the "I had no idea that existed" moment is.
+StartMidwest is explicit about what a great solution feels like to a founder. It's not enough to return search results — what matters is whether the founder genuinely discovers something they couldn't have found themselves. The brief breaks that into three components, all of which need to work together.
+COVERAGE
+Find what Google can't
+Resources surfaced aren't already on the first page of obvious searches. A founder who's already googled doesn't get the same answers back.
+RELEVANCE
+Real fit, not keywords
+The resource actually fits the founder asking — their stage, geography, demographics, what they need — not a keyword-matched approximation.
+EXPLANATION
+Plain language, next step
+The founder understands what it is and what to do next without clicking through five pages of bureaucratic copy.
+Hack Michigan 2026  ·  AI Challenge Brief
+STARTMIDWEST · Context
+
+--- Slide 5 (ppt/slides/slide4.xml) ---
+AI CHALLENGE  ·  STARTMIDWEST
+SCOPE
+What counts as a "resource" — and what doesn't
+StartMidwest has a clear definition of what belongs in the system and what's deliberately excluded.
+IN SCOPE
+Grants and non-dilutive funding — state, city, federal-but-state-administered, regional foundations, university programs
+Tax credits and business incentives — offered by state or local governments
+Accelerators, incubators, and fellowship programs — non-paid, application-based, or sponsored
+Co-working spaces and maker/wet-lab facilities
+Events — pitch nights, meetups, demo days, founder dinners, conferences, office hours
+Government paperwork and filings — incorporating, registering, hiring, licensing, and where to do it
+Hiring assistance programs — workforce development partnerships, apprenticeships, training grants, state-funded talent pipelines
+Mentorship and office-hours programs — universities, SBDCs, SCORE chapters, nonprofits
+OUT OF SCOPE
+Startups themselves — StartMidwest has a database
+Investors and VC firms — StartMidwest has a database
+Paid services, vendors, or suppliers — "give us money and we'll help" doesn't belong
+Generic national resources without a specific Midwest pathway or office
+Consultants and advisory hours listed in econ-dev directories
+Anything where the user feels pitched rather than helped
+The simplest test: Is the resource itself the value, or is someone selling you their service? A pitch competition with a small entry fee belongs (prize, exposure, feedback are valuable). A consultant selling advisory hours does not. When in doubt, ask whether a founder would feel like they discovered an opportunity or had it pitched to them.
+Hack Michigan 2026  ·  AI Challenge Brief
+STARTMIDWEST · Scope
+
+--- Slide 6 (ppt/slides/slide5.xml) ---
+AI CHALLENGE  ·  STARTMIDWEST
+THE PROBLEM
+The freshness problem (and why it matters as much as discovery)
+Half the challenge isn't finding resources — it's keeping the picture true after you find them.
+The dataset StartMidwest is handing teams was last touched over a year ago. Some of it is still accurate. Some of it definitely isn't. This isn't a flaw to be worked around — it's the central condition of the problem. Any system that solves discovery once and then stops will become wrong faster than it became useful.
+Teams will need to think about what the system can answer internally, on demand: Out of these ~100 Michigan resources, how many are still active right now? Which ones have changed — new deadline, new prize amount, new eligibility criteria, dead URL? What new resources exist that weren't on the list a year ago? When a source page changes, what meaningfully changed, and should a human review it?
+StartMidwest is not asking for a perpetual-motion machine. They're asking teams to design a workflow where AI does the legwork — re-fetching sources, detecting meaningful changes, summarizing what changed, proposing new entries from monitored feeds, flagging suspected dead programs — and humans approve the truth. A founder who sees "verified two weeks ago" trusts the answer more than one with no signal at all.
+Every record in the system should carry provenance: last-verified date, source URL, what changed last time, who or what approved it. The system should be honest about its own uncertainty. That honesty is part of the product, not a caveat to it.
+KEY INSIGHT
+A directory that's six months old is half-wrong. A year old is mostly noisy. Part of the challenge — arguably the most important part — is building a system that can answer 'what's still true?' on demand.
+Hack Michigan 2026  ·  AI Challenge Brief
+STARTMIDWEST · The Problem
+
+--- Slide 7 (ppt/slides/slide6.xml) ---
+AI CHALLENGE  ·  STARTMIDWEST
+DATA & RESOURCES
+What teams start with — and the obvious gaps
+StartMidwest is providing a curated baseline. Teams can extend it, ignore parts of it, or rebuild it — but it's a real starting point.
+READY TO USE (MICHIGAN)
+Pitch Competitions (~21) — name, URL, city, frequency, prize pool, top prize
+Michigan Accelerators (~25) — name, URL, city
+State-level Capital Sources (~6) — MI-specific grants and non-dilutive programs
+Coworking Spaces (~27) — name, city, website, short description
+Events (~18) — organizing entity, calendar URL, region
+Other funding (~30) — generic crowdfunding & national programs (use selectively)
+Available as a Google Sheet (link in the source brief)
+KNOWN GAPS WORTH GOING DEEP ON
+Freshness & maintenance — the system that knows what's still true (the centerpiece)
+Government paperwork & filings — incorporate, register, license, hire compliantly in MI
+Hiring & workforce programs — training grants, apprenticeships, state-funded pipelines
+Mentorship — SBDC, SCORE, university office hours, founder-in-residence programs
+Tax credits & incentives — R&D credits, relocation, opportunity zones, hiring credits
+Sustainability & clean-energy programs beyond generic accelerators
+Architectural reach beyond Michigan — even thin coverage of a second state is a signal
+EXTERNAL SOURCES TO MINE
+Detroit events: startdtw.com
+Ohio Startup Network events (Luma)
+Chicago resources: bullishonchicago.com
+Ann Arbor business intelligence
+Wisconsin QNBV program; Wisconsin Investment Fund
+Illinois SBIR/STTR matching
+State econ dev corps (MEDC, IEDC, OhioSE/JobsOhio, WEDC, DCEO)
+City econ dev offices for major Midwest metros
+University entrepreneurship centers & tech transfer
+SBDC networks, SCORE chapters, regional foundations
+Luma, Eventbrite, Meetup feeds filtered to the region
+Hack Michigan 2026  ·  AI Challenge Brief
+STARTMIDWEST · Data & Resources
+
+--- Slide 8 (ppt/slides/slide7.xml) ---
+AI CHALLENGE  ·  STARTMIDWEST
+EXAMPLE SCENARIOS
+Real scenarios to design against
+These are the actual questions StartMidwest expects the system to answer well. Tilt your demo toward Michigan, where the baseline data lives.
+FOUNDER QUESTIONS (MICHIGAN)
+"I'm a solo founder in Ann Arbor working on an AI tool for small manufacturers. What's available to me in the next 90 days?"
+"I'm a Detroit-based hardware startup with 4 employees. Are there hiring incentives or training grants I qualify for?"
+"I'm thinking of relocating from San Francisco to Detroit. What programs would help me land?"
+"What founder events are happening in Michigan this month?"
+"I'm a Black woman founder in Detroit pre-revenue. Are there programs specifically supporting me?"
+BEYOND MICHIGAN (THINNER DATA)
+"I want to incorporate in Ohio. What do I actually have to file, in what order?"
+"What Wisconsin programs offer non-dilutive funding for biotech?"
+OPERATOR SCENARIOS
+"A StartMidwest staffer logs in Monday morning. What does their dashboard show? How long does it take them to understand what needs attention this week?"
+"A pitch competition in the baseline changed its prize amount and deadline. Does the system catch it? How is the operator notified? What does approval look like?"
+"A new accelerator launched in Grand Rapids last week. How does it enter the system — manual entry, AI-discovered from an event calendar, or both?"
+"Of the ~100 Michigan records in the baseline, how many can the system confidently say are still active as of today? What does that report look like?"
+Hack Michigan 2026  ·  AI Challenge Brief
+STARTMIDWEST · Example Scenarios
+
+--- Slide 9 (ppt/slides/slide8.xml) ---
+AI CHALLENGE  ·  STARTMIDWEST
+EVALUATION & CONSTRAINTS
+How StartMidwest will evaluate solutions
+Criteria reflect what StartMidwest cares about: real discovery, sustained accuracy, and architecture that travels.
+EVALUATION CRITERIA
+COVERAGE
+Resources surfaced aren't already on the first page of Google for obvious queries.
+RELEVANCE
+Real fit to the founder asking — not keyword-matched approximations.
+EXPLANATION
+Founder understands what it is and the next step, no bureaucratic copy.
+FRESHNESS
+The system can honestly answer what's still active and what changed.
+OPERATOR EXPERIENCE
+Curation is fast, provenance is visible, AI-proposed updates are reviewable.
+ARCHITECTURE
+Same pipeline could plausibly work for another state — config, not code rewrites.
+CONSTRAINTS
+Michigan first — that's where the baseline data lives
+Demonstrate architectural reach with at least one other state if time allows
+Humans approve the truth — AI proposes, curators decide
+Every record carries provenance: source, last-verified, what changed
+Honor the in-scope / out-of-scope boundary
+Hack Michigan 2026  ·  AI Challenge Brief
+STARTMIDWEST · Evaluation & Constraints
+
+--- Slide 10 (ppt/slides/slide9.xml) ---
+AI CHALLENGE  ·  STARTMIDWEST
+DIRECTIONS WORTH EXPLORING
+Directions worth exploring
+StartMidwest is deliberately open on architecture. These are framings to consider — not prescriptions.
+The brief offers several ways to think about the build. Pick the directions that match your team's strengths. Going deep on one or two scenarios usually beats covering everything shallowly — judges will reward a tool that handles 'what Wisconsin programs am I eligible for' excellently over one that returns thin results for six states.
+Aggregation + RAG
+Structured store + LLM answers with citations grounded in the data.
+Agentic search
+Agent that plans which sources to query, fetches live, synthesizes.
+Hybrid retrieval
+Pre-indexed core for common questions; live search for the long tail.
+Conversational profile
+Short onboarding that personalizes every answer afterward.
+Change detection
+Periodic re-fetch + diff; LLM summarizes meaningful changes.
+Source discovery
+Monitor RSS, event calendars, landing pages; AI proposes, humans approve.
+Second-state demo
+Same pipeline pointed at IL/OH/WI proves it's architecture, not a one-off.
+Founder digest / feed
+Email/SMS digest of new matching resources, or public 'what changed' feed.
+Hack Michigan 2026  ·  AI Challenge Brief
+STARTMIDWEST · Directions

@@ -1,0 +1,18 @@
+IBM Bob – Request and access the free trial plan
+Purpose
+This document provides step-by-step instructions to request, activate, and access the IBM Bob free trial plan, including initial setup and account access.
+Free trial plan Bobcoin limitation
+Each interaction with Bob's AI capabilities consumes Bobcoins. The free trial plan comes with a limitation of 40 Bobcoins for 30 days. When Bobcoins are exhausted or the 30 days end, the account becomes inactive unless upgraded to a paid plan.
+Step 1 - Subscribe for the trial plan
+Open the Bob register for trial URL on your system browser.
+Create an IBM account by filling the form and select Next button. If you already have an existing IBM account, you can proceed to login and complete the authentication.
+Verify your email by entering the 7-digit code sent to your email and check the optional IBM keeping you informed on products and services. Select the Submit button.
+An IBM and Bob account will be created and you will get a confirmation that your trial account is ready.
+You will also receive an email confirmation for subscribing for the trial plan.
+Step 2 – Get started with your free trial and access admin portal
+After successfully subscribing for the trial plan, the Bob team will take about 5 minutes to get your account ready. Once it is ready, you will receive an email confirmation and then you can download and get started using Bob. 
+Access your Bob admin portal to track your Bob usage and see account related information. 
+Follow the below instructions to access your admin portal:
+Login to IBM Bob account using your free trial subscription email.
+Access the admin portal. If you have multiple Bob accounts, please ensure to select the right instance.
+You will see your trial subscription plan details.

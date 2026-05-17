@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claw Companion</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Claw Companion</h1>
+    <span id="mode-indicator" class="mode-pill" data-mode="">--</span>
+    <span id="active-mode-pill" class="mode-pill" data-mode="">no mode</span>
+    <span id="estop-pill" class="mode-pill" data-mode="">READY</span>
+    <button id="estop" class="estop" type="button">E-STOP</button>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <h2>Camera</h2>
+      <div class="camera-wrap">
+        <canvas id="camera" width="640" height="360"></canvas>
+        <div class="camera-overlay">
+          <span class="hint">click anywhere in the workspace to move the arm</span>
+        </div>
+      </div>
+      <div class="row">
+        <label class="muted">Drop Z (mm)</label>
+        <input id="z-mm" type="number" min="0" max="200" step="5" value="60">
+        <label class="muted">Click action</label>
+        <select id="click-action">
+          <option value="move">Move arm</option>
+          <option value="inspect">Inspect (Claude Vision)</option>
+        </select>
+      </div>
+      <div class="row">
+        <button id="describe" type="button">Describe scene</button>
+        <input id="describe-prompt" type="text" placeholder="prompt for Claude Vision">
+      </div>
+    </section>
+
+    <section class="panel">
+      <nav class="tabs" role="tablist">
+        <button class="tab active" data-tab="free" type="button">Free</button>
+        <button class="tab" data-tab="toolship" type="button">Toolship</button>
+        <button class="tab" data-tab="defect" type="button">Defect</button>
+        <button class="tab" data-tab="chess" type="button">Chess</button>
+        <button class="tab" data-tab="manual" type="button">Manual</button>
+      </nav>
+
+      <!-- Free tab: chat with Frankie -->
+      <div class="tab-pane" data-pane="free">
+        <p class="tab-info">
+          Talk to Frankie. Say <em>hello</em> for a wave, ask <em>what can you do?</em>,
+          or tell it to switch to Toolship or Defect. Replies route through IBM Granite
+          (via watsonx) with a silent Claude fallback.
+        </p>
+        <div class="row buttons">
+          <button class="quick-cmd" data-mode="free" data-text="Hey Frankie, who are you?" type="button">Greet</button>
+          <button class="quick-cmd" data-mode="free" data-text="What can you do for me?" type="button">Capabilities</button>
+          <button class="quick-cmd" data-mode="free" data-text="Thanks Frankie." type="button">Thank you</button>
+        </div>
+        <div class="cmd-row">
+          <input class="cmd-input" data-mode="free" type="text" placeholder='say anything...'>
+          <button class="cmd-mic" data-mode="free" type="button" aria-label="speak">🎤</button>
+          <button class="cmd-send" data-mode="free" type="button">Send</button>
+        </div>
+        <pre class="cmd-output" data-mode="free">--</pre>
+      </div>
+
+      <!-- Manual tab: joints + gripper + home -->
+      <div class="tab-pane hidden" data-pane="manual">
+        <h2>Joints</h2>
+        <div class="joint" data-joint="base">
+          <div class="joint-row">
+            <label>Base <span class="hint">ch 4 · LD-1501MG</span></label>
+            <output class="readout" id="readout-base">0°</output>
+          </div>
+          <input type="range" min="-90" max="90" value="0" step="1" data-joint="base">
+        </div>
+        <div class="joint" data-joint="shoulder">
+          <div class="joint-row">
+            <label>Shoulder <span class="hint">ch 3 · LDX-218</span></label>
+            <output class="readout" id="readout-shoulder">0°</output>
+          </div>
+          <input type="range" min="-90" max="90" value="0" step="1" data-joint="shoulder">
+        </div>
+        <div class="joint" data-joint="elbow">
+          <div class="joint-row">
+            <label>Elbow <span class="hint">ch 2 · LFD-01M</span></label>
+            <output class="readout" id="readout-elbow">0°</output>
+          </div>
+          <input type="range" min="-90" max="90" value="0" step="1" data-joint="elbow">
+        </div>
+        <div class="joint" data-joint="wrist">
+          <div class="joint-row">
+            <label>Wrist <span class="hint">ch 1 · LFD-01M</span></label>
+            <output class="readout" id="readout-wrist">0°</output>
+          </div>
+          <input type="range" min="-90" max="90" value="0" step="1" data-joint="wrist">
+        </div>
+        <div class="row buttons">
+          <button id="home" type="button">Home</button>
+          <button id="clear-estop" type="button">Clear E-stop</button>
+        </div>
+
+        <h2>Gripper</h2>
+        <div class="row buttons">
+          <button id="grip-open" type="button">Open</button>
+          <button id="grip-close" type="button">Close</button>
+        </div>
+        <div class="joint">
+          <div class="joint-row">
+            <label>Partial close</label>
+            <output class="readout" id="readout-gripper">0%</output>
+          </div>
+          <input type="range" min="0" max="100" value="0" step="5" id="grip-slider">
+        </div>
+      </div>
+
+      <!-- Defect tab -->
+      <div class="tab-pane hidden" data-pane="defect">
+        <p class="tab-info">
+          Place ONE defective cube and tap <em>Teach defect</em>. Then place that cube
+          plus one or more good cubes inside the grid and tap <em>Find defective</em> —
+          the arm picks the matching one and drops it in the basket.
+        </p>
+        <div class="row buttons">
+          <button class="quick-cmd" data-mode="defect" data-text="teach defect" type="button">Teach defect</button>
+          <button class="quick-cmd" data-mode="defect" data-text="find defective part" type="button">Find defective</button>
+        </div>
+        <div class="cmd-row">
+          <input class="cmd-input" data-mode="defect" type="text" placeholder='try "teach" or "find defective"'>
+          <button class="cmd-mic" data-mode="defect" type="button" aria-label="speak">🎤</button>
+          <button class="cmd-send" data-mode="defect" type="button">Send</button>
+        </div>
+        <pre class="cmd-output" data-mode="defect">--</pre>
+      </div>
+
+      <!-- Toolship tab -->
+      <div class="tab-pane hidden" data-pane="toolship">
+        <p class="tab-info">
+          Ask for a fastener by size. The arm picks it from the tray, brings it to the
+          handoff position, and announces a safety warning. Available: M3, M4, M5, M6.
+        </p>
+        <div class="row buttons">
+          <button class="quick-cmd" data-mode="toolship" data-text="give me M3" type="button">M3</button>
+          <button class="quick-cmd" data-mode="toolship" data-text="give me M4" type="button">M4</button>
+          <button class="quick-cmd" data-mode="toolship" data-text="give me M5" type="button">M5</button>
+          <button class="quick-cmd" data-mode="toolship" data-text="give me M6" type="button">M6</button>
+        </div>
+        <div class="cmd-row">
+          <input class="cmd-input" data-mode="toolship" type="text" placeholder='try "give me M6"'>
+          <button class="cmd-mic" data-mode="toolship" type="button" aria-label="speak">🎤</button>
+          <button class="cmd-send" data-mode="toolship" type="button">Send</button>
+        </div>
+        <pre class="cmd-output" data-mode="toolship">--</pre>
+      </div>
+
+      <!-- Chess tab -->
+      <div class="tab-pane hidden" data-pane="chess">
+        <p class="tab-info">
+          Set up the chess board on the workspace. Tap <em>Your turn</em> and the arm
+          reads the position with Claude Vision, asks Stockfish for a move, and plays
+          it. Tap <em>New game</em> to reset the internal state.
+        </p>
+        <div class="row buttons">
+          <button class="quick-cmd" data-mode="chess" data-text="your turn" type="button">Your turn</button>
+          <button class="quick-cmd" data-mode="chess" data-text="new game" type="button">New game</button>
+        </div>
+        <div class="cmd-row">
+          <input class="cmd-input" data-mode="chess" type="text" placeholder='try "your turn"'>
+          <button class="cmd-mic" data-mode="chess" type="button" aria-label="speak">🎤</button>
+          <button class="cmd-send" data-mode="chess" type="button">Send</button>
+        </div>
+        <pre class="cmd-output" data-mode="chess">--</pre>
+      </div>
+
+      <h2>Status</h2>
+      <pre id="status">connecting...</pre>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

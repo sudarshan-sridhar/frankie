@@ -1,0 +1,16 @@
+[Unit]
+Description=Frankie (FastAPI)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=rpclaw
+WorkingDirectory=/home/rpclaw/frankie
+EnvironmentFile=-/home/rpclaw/frankie/.env
+ExecStart=/home/rpclaw/.local/bin/uv run uvicorn frankie.main:app --host 0.0.0.0 --port 8000 --reload --reload-dir /home/rpclaw/frankie/src --reload-dir /home/rpclaw/frankie/frontend
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

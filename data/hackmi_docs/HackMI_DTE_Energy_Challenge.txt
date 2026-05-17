@@ -1,0 +1,139 @@
+
+--- Slide 1 (ppt/slides/slide1.xml) ---
+HACK MICHIGAN 2026  ·  MAY 15–17  ·  TECHTOWN DETROIT
+AI CHALLENGE
+DTE ENERGY
+Utility Pole Risk Profiling
+Using public data and digital tools to identify the poles, segments, and conditions most likely to fail.
+COMPASS DETROIT  ·  AI CHALLENGE BRIEF
+
+--- Slide 2 (ppt/slides/slide2.xml) ---
+AI CHALLENGE  ·  DTE ENERGY
+THE PROBLEM
+Why utility pole risk is hard to see
+Poles support the entire grid above ground — and what threatens them is everywhere around them.
+Utility poles support critical electric and communications infrastructure across DTE's service territory. Their condition — and the condition of everything around them — directly determines whether the lights stay on, whether crews respond reactively or proactively, and whether outages last hours or days.
+Traditional inspection cycles work on a schedule: a crew visits a section of territory on a rotation, looks at the poles, and moves on. This catches obvious problems, but it has two structural weaknesses. First, it misses early warning signs that only show up between visits — a tree that grew aggressively this season, soil saturation after a wet spring, a storm path that left invisible stress on the wood. Second, it can't prioritize. Every pole gets roughly the same amount of attention, regardless of whether it sits in a clear right-of-way or under a canopy of mature oaks next to a flood-prone creek.
+The result is a maintenance posture that's reactive by design. Crews respond to outages after they happen. Vegetation gets trimmed on a rotation, not in response to actual risk. Capital flows to replacements after failures, not before. Reliability suffers, costs are higher than they need to be, and the data to do better exists — it's just not being assembled.
+Meanwhile, the public data landscape has changed dramatically. Weather histories are downloadable. Satellite and aerial imagery is widely available. Vegetation indices, flood maps, soil data, terrain models — all open. The analytical tools to make sense of them — machine learning, computer vision, GIS platforms — are accessible to anyone with a laptop. The opportunity is to use them.
+KEY INSIGHT
+Traditional inspection cycles can miss early warning signs or fail to prioritize the highest-risk areas.
+Hack Michigan 2026  ·  AI Challenge Brief
+DTE ENERGY · The Problem
+
+--- Slide 3 (ppt/slides/slide3.xml) ---
+AI CHALLENGE  ·  DTE ENERGY
+CONTEXT
+What's changed — and why this challenge exists now
+The conditions for a proactive, data-driven approach are finally in place.
+DTE isn't asking teams to replace field inspections. The goal is to build a layer that complements them — something that tells crews where to look first, what to look for, and which conditions warrant intervention before the next storm hits. Three things make this challenge newly tractable in 2026:
+DATA ACCESS
+Public, free, layered
+Weather history, satellite imagery, vegetation indices, soil and flood data, and open geographic datasets are now downloadable at the resolution utilities actually need.
+TOOL MATURITY
+ML & CV are accessible
+Machine learning, computer vision, and GIS platforms that used to require specialist teams can now be assembled by small groups over a weekend.
+OPERATIONAL PRESSURE
+Reliability matters
+Storm frequency, regulatory expectations, and customer tolerance for outages have all moved. Proactive maintenance is becoming a baseline expectation, not a stretch goal.
+Hack Michigan 2026  ·  AI Challenge Brief
+DTE ENERGY · Context
+
+--- Slide 4 (ppt/slides/slide4.xml) ---
+AI CHALLENGE  ·  DTE ENERGY
+WHAT GOOD LOOKS LIKE
+What a strong solution achieves
+DTE is looking for outcomes, not specific architectures. Hit these and the implementation is up to you.
+OUTCOMES TO AIM FOR
+1
+Risk is assessed at a meaningful unit
+Pole-level or circuit-segment-level — granular enough to drive a work order, coarse enough to be tractable from public data.
+2
+The drivers of risk are visible
+Not just a score, but what's behind it: vegetation encroachment, storm exposure, terrain, age proxies, environmental stress.
+3
+Recommendations are actionable
+The output tells someone what to do — trim, inspect, reinforce, replace — not just where the problem is.
+4
+Decisions are explainable
+Operations and field teams can see why an asset scored the way it did and trust the answer. No black boxes.
+5
+The approach scales
+What works for a pilot circuit could plausibly work across DTE's full service territory without re-engineering.
+THE TEST
+Could a maintenance planner change their next week's schedule based on what your tool shows?
+If yes, you've moved DTE from reactive to predictive. If no, you've built a research artifact — interesting, but not the goal here.
+Hack Michigan 2026  ·  AI Challenge Brief
+DTE ENERGY · What Good Looks Like
+
+--- Slide 5 (ppt/slides/slide5.xml) ---
+AI CHALLENGE  ·  DTE ENERGY
+DATA & RESOURCES
+What teams have to work with
+DTE's challenge is built on public and synthetic data — no proprietary inputs required. Here's the landscape.
+ENVIRONMENTAL & WEATHER DATA
+Weather history and storm patterns — wind speed, ice events, lightning strikes
+Long-term climate and precipitation records
+Storm tracks and severity by region and date
+Forecasts and seasonal patterns for predictive modeling
+GEOSPATIAL & IMAGERY
+Satellite imagery (Landsat, Sentinel, NAIP)
+Aerial photography where available
+Vegetation density and growth indicators (NDVI and similar)
+Terrain, elevation, and slope data
+Soil composition and flood-risk maps
+Open infrastructure datasets and base maps
+POLE & EQUIPMENT CONTEXT
+Pole types, age bands, and material assumptions — proxy modeling where actual asset data is limited
+Nearby vegetation proximity and growth trends
+Environmental stress exposure derived from location
+Synthetic data is fair game for filling gaps
+Hack Michigan 2026  ·  AI Challenge Brief
+DTE ENERGY · Data & Resources
+
+--- Slide 6 (ppt/slides/slide6.xml) ---
+AI CHALLENGE  ·  DTE ENERGY
+EVALUATION & CONSTRAINTS
+How DTE will evaluate solutions
+Criteria are drawn directly from the challenge brief. Constraints are non-negotiable.
+EVALUATION CRITERIA
+IMPACT
+Does the solution meaningfully improve prioritization of maintenance and investment?
+INNOVATION
+Use of public data, creative modeling, or emerging tools in a way that hasn't been done before.
+ACCURACY & LOGIC
+Soundness of the risk factors chosen and the scoring approach built on them.
+USABILITY
+Clear, actionable outputs that operational teams could actually use.
+SCALABILITY
+Plausibility of expanding the approach across the full service territory.
+CONSTRAINTS
+Use only publicly available or synthetic data
+Design for incomplete and imperfect datasets
+Prioritize explainability over black-box models
+Focus on practical application, not theoretical perfection
+Hack Michigan 2026  ·  AI Challenge Brief
+DTE ENERGY · Evaluation & Constraints
+
+--- Slide 7 (ppt/slides/slide7.xml) ---
+AI CHALLENGE  ·  DTE ENERGY
+DIRECTIONS WORTH EXPLORING
+Stretch ideas DTE suggested
+Optional directions if you have time — none are required, and none are the only path.
+These are stretch ideas the sponsor flagged in the brief. They're invitations, not requirements. Strong teams may pursue one of these — or none, and instead go deep on the core problem in a different direction.
+Computer vision on imagery
+Detect vegetation proximity to lines from satellite or aerial imagery.
+Predictive growth & storms
+Model future vegetation growth or storm impact, not just present-day exposure.
+Inspection workflow integration
+Imagine how the output would slot into existing inspection planning.
+Mobile-friendly field outputs
+Outputs that field crews could use on a tablet, not just at a desk.
+Hack Michigan 2026  ·  AI Challenge Brief
+DTE ENERGY · Directions
+
+--- Slide 8 (ppt/slides/slide8.xml) ---
+THE KEY QUESTION
+How can we use accessible data and modern tools to move from reactive pole maintenance to a predictive, risk-based approach that improves reliability and optimizes resources?
+That's the question. The architecture, the model, the visualization — all yours to define.
+HACK MICHIGAN 2026  ·  DTE ENERGY

@@ -1,0 +1,155 @@
+Hackathon Guide
+Hack Michigan
+Powered by IBM Bob
+IBM Bob is IBM’s AI productivity assistant and the featured AI tool for this hackathon. Hack Michigan participants get free trial access to Bob, which you’ll use to power your AI-driven solution. Bob lets your team build, prototype, and iterate quickly during the 48 hours — without standing up infrastructure or managing models yourself.
+This guide walks you through requesting your Bob free trial, accessing the admin portal, and making the most of your Bobcoin allocation during the hackathon. An optional appendix covers IBM Granite models and watsonx.ai for teams that want to extend their solution further.
+Contents
+The hackathon challenge
+    A note on data sets before you begin
+Get started with IBM Bob
+    Free trial plan and Bobcoin limitation
+    Step 1 — Subscribe for the trial plan
+    Step 2 — Get started with your free trial and access the admin portal
+    Tips for working efficiently with Bob during the hackathon
+Appendix A: Example use cases
+Appendix B: Optional — IBM Granite models and watsonx.ai
+    About IBM Granite
+    Option 1: Open-source platforms
+    Option 2: IBM watsonx.ai
+The hackathon challenge
+In this hackathon, you will build an AI-driven solution using IBM Bob for the following theme:
+Make work less boring
+This is your chance to show the world what “different” could look like when it comes to business. Use IBM Bob to build a proof-of-concept, AI-driven solution that brings creativity into how businesses operate. Whether it’s generating new ideas, designing creative content, predicting innovation or market trends, enhancing brainstorming processes, or nurturing creative strategy — you’ll identify an activity that can be improved and build a solution that empowers businesses to innovate faster and more creatively.
+Refer to the Make work less boring example use cases in the Appendix.
+A note on data sets before you begin
+Participants are required to bring their own datasets to build the solution aligning to your use case. As you collect data for your project, you’ll want to use best practices. Here are helpful tips:
+Teams are responsible for ensuring data is compliant.
+Data from public websites may be used, if the terms allow for commercial use, but please keep a list of the websites you use.
+Do not use data or assets containing company confidential data, or any other data without permission from the data owner. Teams are responsible for getting approval.
+Do not use any client data.
+Do not use any data containing personal information (PI).
+Do not use data obtained from social media.
+Get started with IBM Bob
+IBM Bob is the primary AI tool for Hack Michigan. This section covers how to request your free trial, what your Bobcoin allocation looks like, and how to access your admin portal during the event.
+Free trial plan and Bobcoin limitation
+Each interaction with Bob’s AI capabilities consumes Bobcoins. The free trial plan comes with a limitation of 40 Bobcoins for 30 days. When Bobcoins are exhausted or the 30 days end, the account becomes inactive unless upgraded to a paid plan.
+Plan ahead: With only 40 Bobcoins available across 30 days, plan your Bob usage strategically for the 48 hours of the hackathon. Use Bob for high-impact moments — drafting key content, exploring an idea, or testing a workflow — rather than every small task. Coordinate within your team on who is signed in so you don’t accidentally double-spend Bobcoins on the same prompts.
+Step 1 — Subscribe for the trial plan
+Open the Bob register for trial URL in your system browser.
+Create an IBM account by filling out the form and selecting the Next button. If you already have an existing IBM account, you can proceed to log in and complete the authentication.
+Verify your email by entering the 7-digit code sent to your email and check the optional “IBM keeping you informed on products and services” box. Select the Submit button.
+An IBM and Bob account will be created and you will get a confirmation that your trial account is ready.
+You will also receive an email confirmation for subscribing to the trial plan.
+Step 2 — Get started with your free trial and access the admin portal
+After successfully subscribing for the trial plan, the Bob team will take about 5 minutes to get your account ready. Once it is ready, you will receive an email confirmation, and then you can download and get started using Bob.
+Access your Bob admin portal to track your Bob usage and see account-related information.
+Follow the instructions below to access your admin portal:
+Log in to your IBM Bob account using your free trial subscription email.
+Access the admin portal. If you have multiple Bob accounts, please ensure you select the correct instance.
+You will see your trial subscription plan details, including remaining Bobcoins and days left on your trial.
+Tips for working efficiently with Bob during the hackathon
+Front-load your highest-leverage prompts. Use early Bobcoins to validate your idea and shape your approach before you’re deep into building.
+Track your Bobcoin usage in the admin portal so you don’t run out at a critical moment in the build.
+Coordinate within your team on who is signed in to Bob, so you don’t accidentally double-spend Bobcoins on duplicate prompts.
+Save useful prompts and outputs locally — your Bob trial expires after 30 days, so keep a record of what worked for your final submission and write-up.
+Appendix A: Example use cases
+You are not limited to these ideas, but here are several examples of how you could apply IBM Bob to solve a specific issue within your chosen theme:
+Make work less boring with IBM Bob
+Personalize learning and skill development: Facilitate self-guided learning by using AI as an intelligent tutor or coach to keep employees engaged. Create tailored learning paths and recommend relevant courses, articles, and tools to help employees acquire new skills.
+Facilitate interactive collaboration and brainstorming: Use AI as a smart collaborator during brainstorming sessions to generate fresh ideas, challenge assumptions, provide problem-solving suggestions, and synthesize input from team members to develop innovative solutions.
+Enable intuitive communications: Automate and improve communication tasks such as email responses, reminders, scheduling, and interactions with clients or teammates, making everyday communication more insightful.
+Generate intelligent content for creative projects: Assist with content creation by helping design or generate draft text, marketing materials, reports, or presentations, introducing fresh ideas and streamlining creative processes.
+Automate and optimize personal tasks and workflows: Automate routine tasks like data entry, report generation, and scheduling, freeing up time for more meaningful, engaging, and creative work.
+Appendix B: Optional — IBM Granite models and watsonx.ai
+This section is optional. Teams that want to extend their solution beyond Bob — for example, by running an open-source model locally or experimenting with foundation models programmatically — can use the resources below. None of this is required for hackathon participation or judging.
+About IBM Granite
+IBM Granite is a family of AI models purpose-built for business, engineered from the ground up to ensure trust and scalability in AI-driven applications. These enterprise-ready models deliver exceptional performance against safety benchmarks and across a wide range of enterprise tasks from cybersecurity to RAG.
+IBM Granite 3.2 is the latest release in the third generation of IBM Granite models. Headlined by experimental reasoning features and the first official vision language model (VLM), Granite 3.2 introduces several significant new capabilities to the Granite family. Learn more about Granite 3.2.
+Option 1: Open-source platforms
+To access IBM Granite models through open-source platforms and run them locally:
+Download Granite on Hugging Face
+Run locally with Ollama
+Install Ollama on your local machine before using Granite:
+Mac
+Windows
+Linux
+Granite models supported on Ollama
+System requirements
+To run Granite models locally, it is recommended to use a machine with at least 32 GB RAM and a GPU processor. Running on lower RAM and CPU is possible but may result in slower performance.
+Documentation and learning resources
+IBM Granite documentation — full reference for models, agent recipes, and use cases.
+Chat template documentation — recommended for best performance from Granite models.
+Granite cookbooks — sample use cases for different Granite models.
+Granite Workshop — hands-on workshop covering text summarization, RAG, time series forecasting, and code generation.
+BeeAI Agentic Framework
+BeeAI is an open-source agentic framework for building production-ready AI agents, optimized for smaller models such as the Granite 3 series.
+BeeAI Framework for Python — installation and quick example.
+BeeAI Framework for TypeScript — installation and quick example.
+Hands-on labs — basics, Granite-powered ReActAgent, and agent workflows.
+Other Granite quick start samples
+Build an AI-powered multimodal RAG system with Docling and Granite
+IBM Granite 3.2: Writing / Debugging code with AI in seconds
+Build an AI research agent for image analysis with Granite 3.2 Reasoning and Vision models
+Option 2: IBM watsonx.ai
+Teams that want to use the watsonx.ai SaaS runtime to inference Granite models can request access through the hackathon site. Once registered, follow the “Complete the hackathon” page instructions to request an IBM Cloud account.
+watsonx.ai credit usage: Each provisioned account receives $100 in credits. Foundation model inferencing consumes tokens (1,000 tokens = 1 RU at $0.0001 USD), and notebook runtimes are billed per Capacity Unit Hour (CUH) at $1.02 USD/CUH. Email alerts are sent at 25%, 50%, and 80% usage; accounts are deactivated within an hour at 100%. Plan accordingly and back up your work.
+Out of scope features: Agent Studio (Beta), Deploy on IBM Cloud/watsonx.ai, Bring your own model, Fine-tuning, and Cloud Object Storage are not available for this hackathon.
+Access your IBM Cloud account
+Once provisioned, all team members will receive an email invite to join the cloud account. Follow these steps:
+Check the email inbox you used to register for the hackathon and open the email from the IBM Cloud team.
+Click the Join Now button in the email. A new browser tab will open with the cloud account sign-up page.
+Review your account and personal information.
+Click the Join now link in the email to begin joining the cloud account.
+Read and accept the Account notice and click the Join Account button.
+Complete the authentication process by clicking the Continue button.
+After you authenticate successfully, you will be taken to the IBM Cloud dashboard.
+Important note
+If you have an existing personal IBM Cloud account on the same email/IBMid, you may sometimes be directed to your personal account. In this case, switch to the xxxxxxx – watsonx account from the account drop-down at the top-right of the dashboard.
+Access Prompt Lab on watsonx.ai
+After successfully joining the IBM Cloud account, you can access the Prompt Lab on the watsonx.ai platform to work with the Granite models supported on the platform.
+Log in at https://dataplatform.cloud.ibm.com/wx/home?context=wx with the email you used for IBM Cloud.
+Confirm the account name is xxxxxxx – watsonx and the region is set to Dallas.
+Click Open Prompt Lab on the “Chat and build prompts with foundational models” widget.
+The Prompt Lab editor opens with a chat window to get you started.
+Selecting an IBM Granite model
+A granite-3-8b-instruct model is pre-selected. To switch:
+Open the AI Model drop-down and click View all foundation models.
+Clear all filters and search “granite”. All Granite series models will be displayed.
+See choosing a model for guidance on modalities, supported languages, tuning, and indemnification.
+Programmatic access (API endpoint)
+To call watsonx.ai APIs/SDKs, you’ll need three values: a project ID, endpoint URL, and API key.
+On the watsonx.ai home page, scroll down to the Developer access section.
+Select Project or space → watsonx Challenge Sandbox. A project ID will be displayed.
+A default watsonx.ai endpoint URL will be displayed for the Dallas region.
+Click Create API key, enter a name, choose “Disable the leaked key”, and click Create.
+Copy and store the API key securely — you can also download the file.
+Access the prompt code from the Prompt Lab editor
+To prompt an AI model programmatically, click the View code icon at the top-right of the Prompt Lab editor.
+The prompt code is available as cURL, Node.js, and Python.
+To authorize requests, replace the ${YOUR_ACCESS_TOKEN} placeholder with an IAM access token generated from your API key.
+Generating an IAM access token
+POST to https://iam.cloud.ibm.com/identity/token with header Content-Type: application/x-www-form-urlencoded and body grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey=YOUR_API_KEY. IAM tokens are valid for up to 60 minutes — check the expires_in property and refresh as needed.
+watsonx.ai API capabilities
+Available capabilities to explore:
+Chat
+Tool calling
+Text generation
+Time series
+Text rerank
+Embeddings
+Text extraction
+See supported API functionality by model.
+Sample exercises
+Build an AI stylist with IBM Granite using watsonx.ai
+Getting Started with Time Series Models on IBM watsonx.ai
+Build an agentic framework with CrewAI and IBM watsonx.ai
+Saving your Prompt Lab session
+You can save your Prompt Lab editor session for later use.
+At the top of the Prompt Lab screen, select the Save work dropdown and choose Save as.
+In the Save your work widget, select Prompt session under Asset type, enter a name, check View in project after saving, and click Save.
+You can also save your work as a Prompt template (current prompt only) or Notebook (Jupyter Notebook environment, requires Python knowledge).
+Saving your work on watsonx.ai
+IBM Cloud accounts are deactivated at the end of the hackathon. To export your project:
+Go to your project’s ‘Overview’ tab.
+Click the ‘Export or import project’ drop-down beneath the Bell icon and select ‘Export project’.
+Select all assets (project sessions cannot be exported), click ‘Export’, confirm sensitive information has been removed, and click ‘Continue export’ to download the .zip.
